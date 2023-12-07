@@ -1,0 +1,208 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrew's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: white; /* Set white background */
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: left; /* Align navigation links to the left */
+        }
+
+        nav ul {
+            list-style: none; /* Remove default list styling */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Display links in a row */
+        }
+
+        nav li {
+            margin-right: 10px; /* Add margin between navigation links */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .red-box {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px 8px; /* Adjusted padding to make it 10x8 */
+            margin-top: 20px; /* Adjusted margin to lower the red box */
+        }
+
+        .red-box h2, .red-box p {
+            font-size: 200%; /* Set font size to 10 times bigger */
+        }
+
+        .long-red-box {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px; /* Adjusted padding to make it narrower */
+            margin: 20px 0 100vh 0; /* Extended margin to go further down the page */
+        }
+
+        .long-red-box h2, .long-red-box p {
+            font-size: 200%; /* Set font size to 10 times bigger */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .access-link {
+            margin-top: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px;
+            background-color: white; /* White box around the image */
+            padding: 20px; /* Increased padding for consistency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 45%; /* Set width to 45% for two images in a row */
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .paragraph-container {
+            background-color: white; /* White box around the paragraphs */
+            padding: 20px; /* Increased padding for consistency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 20px; /* Set font size to 20px */
+        }
+
+        .header-paragraph-container {
+            background-color: white; /* White box around the paragraphs */
+            padding: 20px; /* Increased padding for consistency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 40px; /* Set font size to 40px */
+        }
+
+        .footer-container {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="red"><a href="index.html">Home</a></li>
+                <li class="red"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1>Andrew's Website</h1>
+    </header>
+
+    <!-- Red box with contact information -->
+    <div class="red-box">
+        <h2>Contact Me</h2>
+        <p>If you are interested in my style of work, contact me for future collaboration opportunities.</p>
+    </div>
+
+<div class="long-red-box">
+    <div class="contact-info">
+        <p>Email: andrewcastine55@gmail.com</p>
+        <p>Instagram: TBD</p>
+        <p>Twitter (x): TBD</p>
+    </div>
+    <div class="access-link">
+        <h2>Podcast Platt$ Boyz First Episode:</h2>
+        <p><a href="https://www.youtube.com/watch?v=O1aQCAb1Uuw" target="_blank">Click Here</a></p>
+    </div>
+    <div class="image-container">
+        <img src="Steelers Gameday.jpg" alt="Steelers Gameday" />
+        <img src="Meme5.png" alt="IMG_0482" />
+        <style>
+            /* ... Your existing styles ... */
+        
+            .bottom-left-image {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                margin: 10px;
+            }
+        
+            .bottom-left-image img {
+                width: 100px; /* Adjust the width as needed */
+                height: auto;
+                border-radius: 5px;
+            }
+        
+            .bottom-right-image {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin: 10px;
+            }
+        
+            .bottom-right-image img {
+                width: 100px; /* Adjust the width as needed */
+                height: auto;
+                border-radius: 5px;
+            }
+        </style>
+    </div>
+</div>
+
+</body>
+
+</html>

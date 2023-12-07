@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: red; /* Set red background */
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column; /* Adjusted to column layout */
+            align-items: center; /* Center items horizontally */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: left; /* Align navigation links to the left */
+            width: 100%; /* Adjusted to take full width */
+            box-sizing: border-box; /* Added box-sizing property */
+        }
+
+        nav ul {
+            list-style: none; /* Remove default list styling */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Display links in a row */
+            justify-content: flex-start; /* Align links to the left */
+        }
+
+        nav li {
+            margin-right: 10px; /* Add margin between navigation links */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px;
+            background-color: white; /* White box around the image */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .intro-paragraph {
+            background-color: white; /* White box around the paragraph */
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: white; /* White box around the slideshow */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slideshow-title {
+            font-size: 35px; /* Adjust font size as needed */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .slideshow-text {
+            font-size: 25px; /* Adjust font size as needed */
+            margin-bottom: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="red"><a href="portfolio.html">Portfolio</a></li>
+                <li class="red"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1>Andrew's Website</h1>
+    </header>
+
+    <div class="intro-paragraph">
+        <p>Hello! I am Andrew. I am graduating SUNY Plattsburgh in May of 2024. I am a double major in Digital Media Production and TV & Video Production.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="IMG_4434.JPG" alt="description of your image" />
+    </div>
+
+    <section>
+        <div class="slideshow-container">
+            <div class="slideshow-title">Here's What I've Been Working On</div>
+            <div id="slideshow-text" class="slideshow-text"></div>
+        </div>
+    </section>
+
+    <footer>
+         2023 Andrew Portfolio.
+    </footer>
+
+    <script>
+        // JavaScript to handle the rolling slideshow
+        const slideshowTexts = [
+            "Platt$ Boyz: Plattsburgh State Sports Podcast",
+            "Intro Video For Plattsburgh State Mens Hockey Team",
+            "Pittsburgh Steelers and Pittsburgh Pirates Fan and Highlight Reels",
+            "Fan-Made Sprite Cranberry Commercial",
+            "Cardinal Points Advertisement",
+            "Segment Piece For Plattsburgh Intramural Sports",
+            "Recording Live Highlights For Plattsburgh Sports",
+            "Plattsburgh Live Night Fall 2023 Producer",
+            "Plattsburgh Mens Hockey and V-Mix Productions Video and Interview",
+            "Plattsburgh Athletics 2023 Hall of Fame Videos",
+        ];
+
+        const slideshowTextElement = document.getElementById('slideshow-text');
+        let index = 0;
+
+        function showNextText() {
+            slideshowTextElement.textContent = slideshowTexts[index];
+            index = (index + 1) % slideshowTexts.length;
+        }
+
+        // Initial display
+        showNextText();
+
+        // Update the text every 3 seconds
+        setInterval(showNextText, 3000);
+    </script>
+
+</body>
+
+</html>
+

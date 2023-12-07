@@ -1,0 +1,138 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andrew's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            font-size: 25px;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: red; /* Set red background */
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: left; /* Align navigation links to the left */
+        }
+
+        nav ul {
+            list-style: none; /* Remove default list styling */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Display links in a row */
+        }
+
+        nav li {
+            margin-right: 10px; /* Add margin between navigation links */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px;
+            background-color: white; /* White box around the image */
+            padding: 20px; /* Increased padding for consistency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 45%; /* Set width to 45% for two images in a row */
+            box-sizing: border-box; /* Include padding and border in the total width and height */
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .paragraph-container {
+            background-color: white; /* White box around the paragraphs */
+            padding: 20px; /* Increased padding for consistency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 20px; /* Increased font size */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="red"><a href="index.html">Home</a></li>
+                <li class="red"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <h1>Andrew's Website</h1>
+    </header>
+
+    <!-- Additional paragraphs -->
+    <div class="paragraph-container">
+        <p>Here is a small collection of my best work. I have been involved in digital media production for 6 years, going back to my junior year of high school. I want to highlight my first-ever production that I produced. I created a sports podcast for Plattsburgh State Television called Platt$ Boyz.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="PSTV Show Fall 2023/Episode 1 Graphics/Jets2023Primetime.png" alt="description of your image" />
+        <p> New York Jets primetime scheudle grpahic for a segment of Platt$ Boyz episode 1</p>
+    </div>
+
+    <div class="image-container">
+        <img src="PSTV Show Fall 2023/Episode 6/Lakers.png" alt="description of your image" />
+        <p>Los Angeles Lakers lower third graphic for a segment of Platt$ Boyz for Episode 6</p>
+    </div>
+
+    <div class="image-container">
+        <img src="CardinalSportsUpdate.png" alt="description of your image" />
+        <p>Plattsburgh State sports lower thrid grpahic for a segment of Platt$ Boyz</p>
+    </div>
+
+    <div class="image-container">
+        <img src="Plattsboys logo_.png" alt="description of your image" />
+        <p> Logo from the studnet run Plattsburgh State Televsiion podcast: Platt$ Boyz</p>
+    </div>
+    
+    
+
+    <footer>
+        2023 Andrew Portfolio.
+    </footer>
+
+</body>
+
+</html>
+
